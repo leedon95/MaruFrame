@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>패럴렉스</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="MaruFrame.css" rel="stylesheet">
+
+	<script>
+	  function divtop(){
+	   location.href = "#top";
+	 		}
+	  function divmid1(){
+	   location.href = "#mid1";
+	    }
+		function divmid2(){
+		 location.href = "#mid2";
+			}
+	  function divbot(){
+	   location.href = "#bot";
+	    }
+		function RP(){location.href="Introduce.html"} //클릭시 이동
+	 </script>
+
+ </head>
+<body>
+
+<div class="pimg" style="background-image:url('3.jpg');"> <!-- style안에 이미지 넣으면 끝나요 -->
+	<div class="intext-center" style="top:50%"> <!-- intext-center는 텍스트를 화면 가운데에 띄웁니다. -->
+		<font size="14" style="color:black;">마루 프레임워크에 오신걸 환영합니다.</font> <!-- 입력되는 텍스트입니다. -->
+		<br>
+	</div>
+</div>
+
+<div id="mid1" class="pimg" style=" background-image:url('2.jpg');">
+	<div class="intext-right" style="top:50%"> <!-- intext-right는 텍스트를 화면 오른쪽에 띄웁니다. -->
+		<font size="14">이 글자는 오른쪽 정렬됩니다.</font>
+		<a class="Ghost-button" href="#">고스트버튼</a>
+	</div>
+</div>
+
+<div id="mid2" class="pimg" style=" background-image:url('4.jpg');">
+	<div class="intext-center" style="top:50%">
+		<font size="14">이 글자는 가운데정렬됩니다.</font><br>
+		<a class="Ghost-button-Black" href="#">고스트버튼</a>
+	</div>
+</div>
+
+<div id="bot" class="pimg" style=" background-image:url('1.png');">
+	<div class="intext-left" style="top:50%">  <!-- intext-left는 텍스트를 화면 왼쪽에 띄웁니다. -->
+		<font size="14">이 글자는 왼쪽 정렬됩니다.</font>
+		<a class="Ghost-button" href="#">고스트버튼</a>
+	</div>
+</div>
+
+<div style="height:150px; background-color:#222; text-align:center; padding:50px;">
+	<input type="button" class="BigBasicButton" value="돌아가기" onclick="RP()">
+</div>
+<div id="Remocon"> <!-- 리모컨을 열어주는 코드입니다. -->
+	<center>
+		<h2 id="RemoconTop">Remocon</h2> <!-- 리모컨의 머리부분입니다. -->
+		<input type='button' value='△' style="margin-bottom:15px; width:30px; height:30px;" onclick="divtop()">
+     <!--저는 버튼을 넣었습니다. 리모컨 내부에 여러분들이 넣고싶은걸 넣으시면 됩니다. -->
+		<input type='button' value='▽' style="margin-bottom:15px; width:30px; height:30px;" onclick="divbot()">
+	</center>
+</div>
+
+</body>
+</html>

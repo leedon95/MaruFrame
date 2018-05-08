@@ -1,0 +1,876 @@
+    html,body {
+      margin:0;
+      padding:0;
+      height:100%; /* div 높이 100%를 위해 필요합니다. */
+    }
+
+  /* 여기서부터 아티클, 반응형 폰트*/
+
+    @media screen and (max-width: 1920px) {
+
+      .articlemd2{ /*한 행에 아티클 2개 */
+        display: inline-block; /*아티클을 일자로 정렬합니다.*/
+        background-color: #fff; /*백그라운드 컬러*/
+        margin: 15px; /*아티클과 아티클간의 간격입니다.*/
+        border: 1px solid #eee; /*아티클의 테두리*/
+        width: 560px; /*아티클의 크기*/
+        transition-duration: 1s; /*이티클들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+
+      .articlemd3{ /*한 행에 아티클 3개*/
+        display: inline-block; /*아티클을 일자로 정렬합니다.*/
+        background-color: #fff; /*백그라운드 컬러*/
+        margin: 15px; /*아티클과 아티클간의 간격입니다.*/
+        border: 1px solid #eee; /*아티클의 테두리*/
+        width: 360px; /*아티클의 크기*/
+        transition-duration: 1s; /*아티클들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+
+      .articlefont1{ font-size: 30px; text-align: center;}
+
+      .articlefont2{ padding:10px; font-size:16px; }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+      .articlemd2{ /*한 행에 아티클 2개 */
+        display: inline-block; /*아티클을 일자로 정렬합니다.*/
+        background-color: #fff; /*백그라운드 컬러*/
+        margin: 15px; /*아티클과 아티클간의 간격입니다.*/
+        border: 1px solid #eee; /*아티클의 테두리*/
+        width: 450px; /*아티클의 크기*/
+        transition-duration: 1s; /*아티클들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+
+      .articlemd3{ /*한 행에 아티클 3개*/
+        display: inline-block; /*아티클을 일자로 정렬합니다.*/
+        background-color: #fff; /*백그라운드 컬러*/
+        margin: 15px; /*아티클과 아티클간의 간격입니다.*/
+        border: 1px solid #eee; /*아티클의 테두리*/
+        width: 285px; /*아티클의 크기*/
+        transition-duration: 1s; /*아티클들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+
+      .articlefont1{ font-size: 26px; text-align: center;}
+      .articlefont2{ padding:10px; font-size:14px; }
+    }
+
+    @media screen and (max-width: 980px) {
+
+      .articlemd2{
+        display: inline-block;
+        background-color: #fff;
+        margin: 10px;
+        border: 1px solid #eee;
+        width: 360px;
+        transition-duration: 1s;}
+
+      .articlemd3{
+        display: inline-block;
+        background-color: #fff;
+        margin: 10px;
+        border: 1px solid #eee;
+        width: 230px;
+        transition-duration: 1s;}
+
+      .articlefont1{ font-size: 20px; text-align: center;}
+      .articlefont2{ padding:10px; font-size:12px; }
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .articlemd2{
+        display: inline-block;
+        background-color: #fff;
+        margin: 5px;
+        border: 1px solid #eee;
+        width: 280px;
+        transition-duration: 1s;}
+
+      .articlemd3{
+        display: inline-block;
+        background-color: #fff;
+        margin: 5px;
+        border: 1px solid #eee;
+        width: 180px;
+        transition-duration: 1s;}
+
+      .articlefont1{ font-size: 18px; text-align: center;}
+      .articlefont2{ padding:10px; font-size:10px; }
+  }
+
+  @media screen and (max-width: 650px) {
+
+    .articlemd2{
+      display: inline-block;
+      background-color: #fff;
+      margin: 5px;
+      border: 1px solid #eee;
+      width: 100%;
+      transition-duration: 1s;}
+
+    .articlemd3{
+      display: inline-block;
+      background-color: #fff;
+      margin: 5px;
+      border: 1px solid #eee;
+      width: 100%;
+      transition-duration: 1s;}
+
+    .articlefont1{ font-size: 18px; text-align: center;}
+    .articlefont2{ padding:10px; font-size:10px; }
+}
+
+  /* 여기서부터 이미지 갤러리*/
+
+
+@media screen and (max-width:1920px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff; /*백그라운드 컬러 흰색*/
+    width:1190px;  /*바디 좌우 너비*/
+    height:auto; /*바디 상하 크기 자동 조절 */
+    margin:30px auto; /*위로부터 30px만큼 멀어집니다.*/
+    padding: 20px 20px 20px 20px; /*갤러리 내 이미지들로부터 20px만큼씩 공간을 둡니다.*/
+    border:1px solid #e5e5e5; /*테두리*/
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*그림자 효과를 줌으로써 바디를 부각시킵니다.*/}
+
+  div.IMGgallery3 { /*갤러리 3을 3개 쓰면 한 행에 이미지 3개 출력이 가능합니다.*/
+    background-color: #efefef; /*백그라운드 컬러*/
+    margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
+    border: 2px solid #fff; /*이미지의 테두리*/
+    float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
+    width: 350px; /*이미지의 크기*/
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
+    transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+
+  div.IMGgallery2 { /*갤러리 2를 2개 쓰면 한 행에 이미지 2개 출력이 가능합니다.*/
+    background-color: #efefef; /*백그라운드 컬러*/
+    margin: 20px; /*이미지와 이미지들간의 간격입니다.*/
+    border: 2px solid #fff; /*이미지의 테두리*/
+    float: left; /*이 태그를 절대 지우면 안됩니다. 왼쪽부터 이미지 정렬*/
+    width: 550px; /*이미지의 크기*/
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /*이미지에 그림자 효과를 줍니다.*/
+    transition-duration: 1s; /*이미지들이 움직이는 속도 1초 (속도 조절 가능합니다 0.5 = 0.5초)*/}
+}
+
+@media screen and (max-width:1200px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff;
+    width:980px;
+    height:auto;
+    margin:30px auto;
+    padding: 15px 15px 15px 15px;
+    border:1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+
+div.IMGgallery3 {
+    background-color: #efefef;
+    margin: 10px;
+    border: 2px solid #fff;
+    float: left;
+    width: 300px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+
+div.IMGgallery2 {
+    background-color: #efefef;
+    margin: 20px;
+    border: 2px solid #fff;
+    float: left;
+    width: 440px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+}
+
+@media screen and (max-width:1000px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff;
+    width:770px;
+    height:auto;
+    margin:30px auto;
+    padding: 15px 15px 15px 15px;
+    border:1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+
+div.IMGgallery3 {
+    background-color: #efefef;
+    margin: 10px;
+    border: 2px solid #fff;
+    float: left;
+    width: 230px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+
+div.IMGgallery2 {
+    background-color: #efefef;
+    margin: 15px;
+    border: 2px solid #fff;
+    float: left;
+    width: 350px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+}
+
+@media screen and (max-width:780px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff;
+    width:600px;
+    height:auto;
+    margin:30px auto;
+    padding: 15px 15px 15px 15px;
+    border:1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+
+div.IMGgallery3 {
+    background-color: #efefef;
+    margin: 10px;
+    border: 2px solid #fff;
+    float: left;
+    width: 170px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+
+div.IMGgallery2 {
+    background-color: #efefef;
+    margin: 15px;
+    border: 2px solid #fff;
+    float: left;
+    width: 260px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+}
+
+@media screen and (max-width:650px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff;
+    width:450px;
+    height:auto;
+    margin:30px auto;
+    padding: 15px 15px 15px 15px;
+    border:1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+
+div.IMGgallery3 {
+    background-color: #efefef;
+    margin: 5px;
+    border: 2px solid #fff;
+    float: left;
+    width: 135px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+
+div.IMGgallery2 {
+    background-color: #efefef;
+    margin: 10px;
+    border: 2px solid #fff;
+    float: left;
+    width: 200px;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+}
+
+@media screen and (max-width:470px){ /*사이즈에 따른 크기 조절 */
+  .GalleryBody{
+    background-color:#ffffff;
+    width:300px;
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    border:1px solid #e5e5e5;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;}
+
+div.IMGgallery3 {
+    background-color: #efefef;
+    margin: 5px;
+    border: 2px solid #fff;
+    width:95%;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+
+div.IMGgallery2 {
+    background-color: #efefef;
+    margin: 5px;
+    border: 2px solid #fff;
+    width: 95%;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+    transition-duration: 1s;}
+}
+
+div.IMGgallery3:hover, /*마우스 올림시 효과 */
+div.IMGgallery2:hover {
+    border: 2px solid #333; /*테두리*/
+    -ms-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+    -webkit-transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+    transform: rotate(5deg); /*오른쪽으로 5deg 만큼 기웁니다. */
+    transition-duration: 1s; /*애니메이션 진행시간 1초 */
+}
+div.IMGgallery3 img,
+div.IMGgallery2 img {
+    width: 100%; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
+    height: auto; /*이미지들을 div갤러리 크기에 맞게 조절해줍니다. 없애면 안됩니다.*/
+}
+
+div.desc { /*이미지 갤러리 하단에 글씨 출력 */
+    padding: 15px; /*여백효과*/
+    text-align: center; /*가운데 정렬*/
+}
+
+  /* 여기서부터 패럴랙스 스크롤링 */
+
+
+.pimg{
+   width:100%; /*가로 100%*/
+   min-height:100%; /*세로 100%*/
+   text-align:center; /*div내 글자들 가운데 정렬 (굳이 안써도 됩니다.)*/
+   background-attachment: fixed; /*이 태그를 사용하면 이미지가 움직이지 않습니다.*/
+   background-position: center; /*배경 이미지를 가운데로 정렬합니다.*/
+   background-size:cover; /*이미지를 화면에 꽉맞게 사이즈 조절 합니다.*/
+ }
+.intext-center{
+  padding-top:25%; /*글자를 화면 중앙에 고정 시킵니다.*/
+  color:#fff; /*색상 흰색*/
+}
+.intext-left{
+  padding-top:25%; /*글자를 화면 중앙에 고정 시킵니다.*/
+  padding-right:50%; /*글자를 화면 중앙에 고정 시킵니다. (반대로 이동함.)*/
+  color:#fff; /*색상 흰색*/
+}
+.intext-right{
+  padding-top:25%; /*글자를 화면 중앙에 고정 시킵니다.*/
+  padding-left:50%; /*글자를 화면 중앙에 고정 시킵니다. (반대로 이동함.)*/
+  color:#fff; /*색상 흰색*/
+}
+
+
+/* 여기서부터 버튼*/
+
+/*  BasicButton */
+
+  .BasicButton{
+    margin:15px; /*버튼과 버튼사이의 간격*/
+    padding:15px 35px 15px 35px; /*버튼과 테두리 사이의 여백크기*/
+    border:2px solid black; /*테두리 두께 2px 선형식 검은색*/
+    cursor:pointer; /*마우스 올렸을때 마우스를 포인터 형식으로 바꿉니다.*/
+    width:auto;
+    height:auto;
+    font-size:16px; /*폰트의 사이즈입니다.*/
+    font-weight:bold; /*글씨 Bold체*/
+    background-color:#f9f9f9; /*버튼의 백그라운드 컬러입니다.*/
+    transition-duration:0.5s; /*변환시간 1초*/
+    border-radius: 10px; /* 테두리를 둥글게 만듭니다. */
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /* 그림자 추가 */
+    }
+  .BasicButton:hover{
+    transition-duration:0.5s;
+    color:#fff;
+    background-color:#999999;
+    }
+
+  .MiddleBasicButton{
+    width: auto;
+    height: auto;
+    margin:15px;
+    padding:25px 50px 25px 50px;
+    background-color:#f9f9f9;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 24px;
+    border:2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .MiddleBasicButton:hover{
+    transition-duration:0.5s;
+    color:#fff;
+    background-color:#999999;
+  }
+
+  .BigBasicButton{
+    width: auto;
+    height: auto;
+    margin:15px;
+    padding:35px 70px 35px 70px;
+    background-color:#f9f9f9;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .BigBasicButton:hover{
+    transition-duration:0.5s;
+    color:#fff;
+    background-color:#999999;
+  }
+
+  .HorizonBasicButton{
+    width: 100%;
+    height: auto;
+    margin:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color:#f9f9f9;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .HorizonBasicButton:hover{
+    transition-duration:0.5s;
+    color:#fff;
+    background-color:#999999;
+  }
+
+/*RedButton*/
+
+.RedButton{
+  margin:15px; /*버튼과 버튼사이의 간격*/
+  padding:15px 35px 15px 35px; /*버튼과 테두리 사이의 여백크기*/
+  border:2px solid black; /*테두리 두께 2px 선형식 검은색*/
+  cursor:pointer; /*마우스 올렸을때 마우스를 포인터 형식으로 바꿉니다.*/
+  width:auto;
+  height:auto;
+  font-size:16px; /*폰트의 사이즈입니다.*/
+  font-weight:bold; /*글씨 Bold체*/
+  background-color:#f45942; /*버튼의 백그라운드 컬러입니다.*/
+  transition-duration:0.5s; /*변환시간 1초*/
+  border-radius: 10px; /* 테두리를 둥글게 만듭니다. */
+  box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px; /* 그림자 추가 */
+  }
+.RedButton:hover{
+  transition-duration:0.5s;
+  background-color:#bf3520;
+  }
+
+.MiddleRedButton{
+  width: auto;
+  height: auto;
+  margin:15px;
+  padding:25px 50px 25px 50px;
+  background-color:#f45942; 
+  font-weight: bold;
+  cursor:pointer;
+  font-size: 24px;
+  border:2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+}
+.MiddleRedButton:hover{
+  transition-duration:0.5s;
+  background-color:#bf3520;
+}
+
+.BigRedButton{
+  width: auto;
+  height: auto;
+  margin:15px;
+  padding:35px 70px 35px 70px;
+  background-color:#f45942; 
+  font-weight: bold;
+  cursor:pointer;
+  font-size: 30px;
+  border:2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+}
+.BigRedButton:hover{
+  transition-duration:0.5s;
+  background-color:#bf3520;
+}
+
+.HorizonRedButton{
+  width: 100%;
+  height: auto;
+  margin:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  background-color:#f45942; 
+  font-weight: bold;
+  cursor:pointer;
+  font-size: 30px;
+  border:2px solid black;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+}
+.HorizonRedButton:hover{
+  transition-duration:0.5s;
+  background-color:#bf3520;
+}
+
+/* White-blackButton */
+
+  .White-blackButton{
+    width: auto;
+    height: auto;
+    margin:15px;
+    padding:15px 35px 15px 35px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 16px;
+    border:2px solid #333;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .White-blackButton:hover{
+    background-color: #333;
+    color:#fff;
+    border:2px solid #fff;
+    transition-duration: 0.5s;
+  }
+
+  .MiddleWhite-blackButton{
+    margin:15px;
+    width: auto;
+    height: auto;
+    padding:25px 50px 25px 50px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 24px;
+    border:2px solid #333;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .MiddleWhite-blackButton:hover{
+    background-color: #333;
+    color:#fff;
+    border:2px solid #fff;
+    transition-duration: 0.5s;
+  }
+
+  .BigWhite-blackButton{
+    margin:15px;
+    width: auto;
+    height: auto;
+    padding:35px 70px 35px 70px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 30px;
+    border:2px solid #333;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .BigWhite-blackButton:hover{
+    background-color: #333;
+    color:#fff;
+    border:2px solid #fff;
+    transition-duration: 0.5s;
+  }
+
+  .HorizonWhite-blackButton{
+    margin:15px;
+    width: 100%;
+    height: auto;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 30px;
+    border:2px solid #333;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(200,200,200,.7) 0 5px 10px 2px;
+  }
+  .HorizonWhite-blackButton:hover{
+    background-color: #333;
+    color:#fff;
+    border:2px solid #fff;
+    transition-duration: 0.5s;
+  }
+/* Ghost-button */
+
+.Ghost-button {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  height: auto; /*상하 자동 조절*/
+  width: auto;
+  margin: 10px;
+  padding:15px 35px 15px 35px; /*글자와 버튼간의 거리사이*/
+  font-size:18px; /*폰트의 크기입니다.*/
+  color: #fff; /*폰트 흰색*/
+  border: 2px solid #fff; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.Ghost-button:hover, /*마우스 올림시 효과*/
+.Ghost-button:active {
+   background-color: #fff;
+   text-decoration: none;
+   color: #000; /*폰트 검정색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.MiddleGhost-button {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  height: auto; /*상하 자동 조절*/
+  width: auto;
+  margin: 15px;
+  padding:25px 50px 25px 50px;
+  font-size:24px; /*폰트의 크기입니다.*/
+  color: #fff; /*폰트 흰색*/
+  border: 2px solid #fff; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.MiddleGhost-button:hover, /*마우스 올림시 효과*/
+.MiddleGhost-button:active {
+   background-color: #fff;
+   text-decoration: none;
+   color: #000; /*폰트 검정색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.BigGhost-button {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  height: auto; /*상하 자동 조절*/
+  width: auto;
+  margin: 15px;
+  padding:35px 70px 35px 70px;
+  font-size:30px; /*폰트의 크기입니다.*/
+  color: #fff; /*폰트 흰색*/
+  border: 2px solid #fff; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.BigGhost-button:hover, /*마우스 올림시 효과*/
+.BigGhost-button:active {
+   background-color: #fff;
+   text-decoration: none;
+   color: #000; /*폰트 검정색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.HorizonGhost-button {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  height: auto; /*상하 자동 조절*/
+  width: 100%;
+  margin: 15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:30px; /*폰트의 크기입니다.*/
+  color: #fff; /*폰트 흰색*/
+  border: 2px solid #fff; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.HorizonGhost-button:hover, /*마우스 올림시 효과*/
+.HorizonGhost-button:active {
+   background-color: #fff;
+   text-decoration: none;
+   color: #000; /*폰트 검정색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+/* Ghost-button-Black */
+
+.Ghost-button-Black {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  width: auto;
+  height: auto; /*상하 자동 조절*/
+  margin:10px; /*버튼간 거리 조절*/
+  padding:15px 35px 15px 35px; /*글자와 버튼간의 거리사이*/
+  font-size:18px; /*폰트의 크기입니다.*/
+  color: #000; /*폰트 검은색*/
+  border: 2px solid #000; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.Ghost-button-Black:hover, /*마우스 올림시 효과*/
+.Ghost-button-Black:active {
+   background-color: #000;
+   text-decoration: none;
+   color: #fff; /*폰트 흰색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.MiddleGhost-button-Black {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  width: auto;
+  height: auto; /*상하 자동 조절*/
+  margin:15px; /*버튼간 거리 조절*/
+  padding:25px 50px 25px 50px;
+  font-size:24px; /*폰트의 크기입니다.*/
+  color: #000; /*폰트 검은색*/
+  border: 2px solid #000; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.MiddleGhost-button-Black:hover, /*마우스 올림시 효과*/
+.MiddleGhost-button-Black:active {
+   background-color: #000;
+   text-decoration: none;
+   color: #fff; /*폰트 흰색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.BigGhost-button-Black {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  width: auto;
+  height: auto; /*상하 자동 조절*/
+  margin:15px; /*버튼간 거리 조절*/
+  padding:35px 70px 35px 70px;
+  font-size:30px; /*폰트의 크기입니다.*/
+  color: #000; /*폰트 검은색*/
+  border: 2px solid #000; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.BigGhost-button-Black:hover, /*마우스 올림시 효과*/
+.BigGhost-button-Black:active {
+   background-color: #000;
+   text-decoration: none;
+   color: #fff; /*폰트 흰색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+.HorizonGhost-button-Black {
+  display: inline-block; /*고스트 버튼이 글씨를 따라갑니다.*/
+  width: 100%;
+  height: auto; /*상하 자동 조절*/
+  margin:15px; /*버튼간 거리 조절*/
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:26px; /*폰트의 크기입니다.*/
+  color: #000; /*폰트 검은색*/
+  border: 2px solid #000; /*고스트 버튼의 테두리입니다.*/
+  text-align: center; /*고스트 버튼 내 글씨 가운데정렬 */
+  text-decoration: none; /*밑줄제거*/
+  transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+.HorizonGhost-button-Black:hover, /*마우스 올림시 효과*/
+.HorizonGhost-button-Black:active {
+   background-color: #000;
+   text-decoration: none;
+   color: #fff; /*폰트 흰색*/
+   transition-duration: 0.5s; /*애니메이션 지속시간 0.5초*/
+}
+
+/*  여기서부터 이미지 슬라이드 */
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1200px; /*고정값이 아닙니다. 브라우저 크기에따라 알아서 줄어들어요*/
+  position: relative; /*포지션태그*/
+  margin: auto; /* 바깥여백*/
+}
+
+.prevIMG { /*전으로 가는 이미지*/
+  cursor: pointer; /*DIV 위에 마우스를 올리면 커서가 포인터로 바뀝니다. */
+  position: absolute; /*위치는 절대값으로 합니다.*/
+  top: 50%; /*중앙에 위치합니다.*/
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+  .nextIMG {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextIMG {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevIMG:hover, .nextIMG:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Texton-IMG {
+  font-family: Verdana, sans-serif;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dotonIMG {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotonIMG:hover {
+  background-color: #717171;
+}
+
+.fadeIMG {
+  -webkit-animation-name: fadeIMG;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeIMG;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeIMG { /*동적인 애니메이션을 추가합니다.*/
+  from {opacity: .4} /*투명도 0.4에서(0이 최소 = 투명도 40%)*/
+  to {opacity: 1} /*투명도 1로(1이 최대 = 투명도 0%)*/
+}
+
+@media only screen and (max-width: 300px) {
+  .prevIMG, .nextIMG,.Texton-IMG {font-size: 11px}
+}
+
+/*리모컨입니다.*/
+
+#Remocon{
+  cursor:default; /*마우스를 올렸을때 속성입니다. default=기본마우스*/
+  opacity: .6; /* 약간 투명하게 합니다. */
+  position:fixed; /*리모컨 오른쪽에 고정*/
+  background-color: #fff; /*배경 흰색*/
+  width:auto; /*넓이*/
+  border-radius: 10px; /*테두리 둥글게*/
+  border: 1px solid #222;
+  height: auto; /*높이 자동조절*/
+  top:40%; /*위에서 화면의 40%만큼 내려옵니다. (수정하여 리모컨의 위치를 조정하세요.)*/
+  left:90%; /*왼쪽에서 화면의 90%만큼 옆으로 갑니다. (수정하여 리모컨의 위치를 조정하세요.)*/
+  transition-duration: .5s; /*애니메이션 가동시간 0.5초*/
+}
+#Remocon:hover{
+  opacity: 1; /*마우스를 올리면 다시 원래색으로 돌아옵니다.*/
+  transition-duration: .5s; /*애니메이션 가동시간 0.5초*/
+}
+#RemoconTop{ /*리모컨의 머리부분입니다.*/
+  margin-top:0px; /*리모컨과 리모컨머리를 합칩니다. (중간 여백 없음)*/
+  padding: 5px; /*리모컨 탑 내부의 여백*/
+  border-top-left-radius:10px; /*둥글기*/
+  border-top-right-radius:10px; /*둥글기*/
+  border-bottom: 1px solid #222; /*리모컨 탑 밑의 테두리부분입니다.*/
+  background:#ccc; /*백그라운드 컬러*/
+}

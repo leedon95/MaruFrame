@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="MaruFrame.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+
+    <script>
+      function RP(){location.href="Introduce.html"} //클릭시 이동
+    </script>
+  </head>
+  <body>
+    <div class="GalleryBody"> <!-- 바디 -->
+
+      <div class="IMGgallery3"> <!-- Div로 묶어줌. IMGgallery3은 화면에 3개출력 IMGgallery2는 화면에 2개출력 -->
+        <a target="_parent" href="MARUWARE1.png"> <!-- 클릭시 이미지 출력 -->
+          <img src="MARUWARE1.png"> <!-- 화면에 보이는 이미지 -->
+        </a>
+        <div class="desc">MARUWARE</div> <!-- 이미지 하단에 글씨 출력 -->
+      </div>
+
+      <div class="IMGgallery3">
+        <a target="_self" href="MARUWARE2.png">
+          <img src="MARUWARE2.png">
+        </a>
+        <div class="desc">MARUWARE</div>
+      </div>
+
+      <div class="IMGgallery3">
+        <a target="_blank" href="MARUWARE3.png">
+          <img src="MARUWARE3.png">
+        </a>
+        <div class="desc">MARUWARE</div>
+      </div>
+     <div style="clear:both;"></div> <!-- 마지막에 초기화 해줘야 갤러리 바디가적용 됩니다. 갤러리 바디 안쓰면 적용 안헤도 됌. -->
+
+     <div class="IMGgallery2">
+       <a target="_self" href="1.png">
+         <img src="1.png">
+       </a>
+       <div class="desc">도시</div>
+     </div>
+
+     <div class="IMGgallery2">
+       <a target="_blank" href="2.jpg">
+         <img src="2.jpg">
+       </a>
+       <div class="desc">블록체인 이미지</div>
+     </div>
+    <div style="clear:both;"></div> <!-- 마지막에 초기화 해줘야 갤러리 바디가적용 됩니다. 갤러리 바디 안쓰면 적용 안헤도 됌. -->
+
+    <br>
+    <center>
+      <input type="button" class="White-blackButton" value="돌아가기" onclick="RP()">
+    </center>
+
+    </div> <!--갤러리 바디 닫힘-->
+  </body>
+</html>

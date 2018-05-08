@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <link href="MaruFrame.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      function IG(){location.href="IMG Gallery.html"} //클릭시 이동
+      function PS(){location.href="Pallrax.html"} //클릭시 이동
+      function RP(){location.href="index.html"} //클릭시 이동
+      function BT(){location.href="Button.html"} //클릭시 이동
+      function SL(){location.href="Slider.html"} //클릭시 이동
+    </script>
+  </head>
+
+  <body>
+
+    <div class="GalleryBody">
+
+      <article class="articlemd2"> <!--  articlemd2는 한 행에 2개의 아티클박스를 넣을 수 있습니다. 3은 한 행에 3개 -->
+        <p class="articlefont1">이미지 게시판</p> <!-- 제목이라고 보시면 됩니다. 반응형 폰트로 알아서 크기조절 됩니다. -->
+        <p class="articlefont2">  <!-- 내용이라고 보시면 됩니다. 반응형 폰트.. -->
+          &nbsp;마루웨어 프레임워크는 간단한 이미지 게시판을 제공합니다.<br>
+          &nbsp;기본적인 틀 제공 뿐만아니라 이미지 쿼리를 이용한 반응형으로 제작되어
+          태블릿이나 모바일 환경에서도 관람이 가능합니다.<br>
+          &nbsp;사용하기 쉬운 태그로 누구나 쉽게 코딩이 가능하도록 제작되으며 이미지의 갯수에 제한이 없습니다.
+        </p>
+      </article> <!-- 종료 -->
+
+      <article class="articlemd2">
+        <p class="articlefont1">패럴랙스 스크롤링</p>
+        <p class="articlefont2">
+          &nbsp;마루웨어 프레임워크는 패럴랙스 스크롤링을 지원합니다.<br>
+          &nbsp;패럴랙스 스크롤링은 PC 화면에 보기 적합하며, 반응형 화면에 대해서는 아직 개발단계에
+          있습니다.<br>
+          &nbsp;사용하기 쉬운 태그로 누구나 쉽게 패럴랙스 스크롤링을 만들 수 있으며 이미지의 갯수에 제한이 없습니다.
+        </p>
+      </article>
+
+      <article class="articlemd3">
+        <p class="articlefont1">이미지 슬라이더</p>
+        <p class="articlefont2">
+          마루웨어프레임워크 개발자가 직접 코딩한 이미지 슬라이더를 내장하고 있습니다. 이미지의 갯수에 제한이 없습니다.
+        </p>
+      </article>
+
+      <article class="articlemd3">
+        <p class="articlefont1">버튼</p>
+        <p class="articlefont2">
+          마루웨어 프레임워크에서 직접 제공하는 여러유형의 버튼을 크기에 맞게 골라 사용하실 수 있습니다.
+        </p>
+      </article>
+
+      <article class="articlemd3">
+        <p class="articlefont1">리모컨 기능</p>
+        <p class="articlefont2">
+          Position:fixed를 이용한 간단한 리모컨 기능이 내장되어있습니다. 리모컨 내부는 자유롭게 코딩이 가능합니다.
+        </p>
+      </article>
+
+        <center>
+          <input type="button" value="이미지게시판 구경" class="BasicButton" onclick="IG()">
+          <input type="button" value="패럴랙스 스크롤링 구경" class="BasicButton" onclick="PS()">
+          <input type="button" value="버튼 구경" class="BasicButton" onclick="BT()">
+          <input type="button" value="이미지슬라이더" class="BasicButton" onclick="SL()">
+          <input type="button" value="돌아가기" class="BasicButton" onclick="RP()">
+        </center>
+    </div>
+  </body>
+</html>
